@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+}
+
+@media only screen and (min-width: 812px){
+  nav{
+    height: 100vh;
+    width: 30vw;
+  }
+
+  main{
+    position: absolute;
+    left: 30vw;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 811px){
+  nav{
+    height: 30vh;
+    width: 100vw;
+  }
+
+  main{
+    position: absolute;
+    top: 30vh;
+    left: 0;
+  }
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid #000;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #fff;
+  z-index: 2;
+}
+
+nav header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 10vh;
+  padding-top: 20px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #ccc;
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  z-index: 2;
+}
+
+nav ul{
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: inherit;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+nav li{
+  width: inherit;
+  height: 10vh;
+  padding: 10px 0px 0px 50px;
+  list-style: none;
+  border-top: 1px solid #000;
+  font-size: 20px;
+}
+
+nav a{
+  color: #000;
+  text-decoration: none;
+}
+
+main{
+  z-index: 1;
+}
+
+section{
+  padding: 5px 50px 20px 50px;
+}
+
+section li{
+  padding-bottom: 20px;
+}
+
+.even{
+  background-color: #c9c9c9;
+}
+
+code{
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: #fff;
+  margin: 20px;
+}
